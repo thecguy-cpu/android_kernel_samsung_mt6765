@@ -959,6 +959,7 @@ KBUILD_ARFLAGS := $(call ar-option,D)
 
 include scripts/Makefile.kasan
 include scripts/Makefile.extrawarn
+KBUILD_CFLAGS += -Wno-strict-prototypes -Wno-fortify-source -Wno-deprecated-non-prototype
 include scripts/Makefile.ubsan
 
 # Add any arch overrides and user supplied CPPFLAGS, AFLAGS and CFLAGS as the
